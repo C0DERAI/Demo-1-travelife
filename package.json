@@ -4,12 +4,22 @@
   "description": "A template for imaginary travel company.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "index.html",
     "compile:sass": "node-sass styles/main.scss styles/style.css -w"
   },
   "author": "Riwat",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.8.3"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C0DERAI/Demo-1-travelife.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/C0DERAI/Demo-1-travelife/issues"
+  },
+  "homepage": "https://github.com/C0DERAI/Demo-1-travelife#readme"
 }

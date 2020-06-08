@@ -2,13 +2,30 @@
   padding:0;
   margin:0;
   box-sizing: inherit;
+
 }
 html{
   // This defines 1rem is 10px
   font-size: 90%;
   scroll-behavior: smooth;
+  @include response(phone){
+    font-size: 40%; 
+  }
+  @include response(tab-port){
+    font-size: 60%; 
+  }
+  @include response(tab-land){
+    font-size: 66.25%; 
+  }
+  @include response(desktop){
+    font-size: 90%; 
+  }
 }
 body{
   box-sizing: border-box; 
   background-color: $white-theme; 
+  padding:2rem;
+  @include response(tab-port){
+    padding:0;
+  }
 }

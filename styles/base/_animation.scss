@@ -1,0 +1,125 @@
+@keyframes l-animation {
+  0%{
+    top: 2.1rem;
+    left: 3rem;
+  }
+  50%{
+    top: 8.2rem;
+    left: 3rem;
+  }
+  100%{
+    top: 8.2rem;     
+    left: 10.9rem;
+  }
+}
+@keyframes dot-animation {
+  0%{
+    top: 2.2rem;
+    left: 4.2rem;
+    transform: rotate(0) scale(0);
+    
+  }
+  50%{
+    left: 4.2rem;
+    top: 7.4rem;
+    // transform: rotate(20deg);
+  }
+  85%{
+    left: 13rem;
+  }
+  95%{
+    left: 12rem;
+    
+  }
+  100%{
+    top: 7.4rem;      
+    left: 12.55rem;
+    transform: rotate(45deg) scale(1.5);
+    
+  }
+}
+@keyframes moveInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80%{
+    transform: translateX(1rem);
+  }
+  100%{
+    opacity: .9;
+    transform: translateX(0);
+    
+  }
+}
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80%{
+    transform: translateX(-1rem);
+  }
+  100%{
+    opacity: .9;
+    transform: translateX(0);
+    
+  }
+}
+@keyframes moveUp{
+  0%{
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  
+  100%{
+    opacity: .9;
+    transform: translateY(0);
+    
+  }
+}
+// Rotate Text
+@keyframes skewText{
+  0%{transform:  skewY(0) skewX(0) scale(1);}
+  100%{transform:  skewY(-3deg) skewX(-3deg) scale(1.1);}
+}
+
+// Bg In and Out
+@keyframes bgin{
+	from {
+		transform: skew(-45deg) translate(-150%);
+	}
+	to {
+		transform: skew(-45deg) translate(-50%);
+	}
+}
+@keyframes bgout{
+	from {
+		transform: skew(-45deg) translate(-50%);
+	}
+	to {
+		transform: skew(-45deg) translate(50%);
+	}
+}
+
+@keyframes growout{
+  0%{
+    transform: scale(1);
+    opacity: .2;
+  }
+  50%{
+    transform: scale(2);
+    opacity: .1;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+    display: none;
+  }
+}
+
+// logo background animation
+@keyframes animateBg{
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}

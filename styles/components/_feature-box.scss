@@ -1,0 +1,32 @@
+.feature-box{
+  background-color: rgba($white-theme, .6);
+  font-size: 1.2rem;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+  transition: transform 300ms ease;
+  &__icon{
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #45EBA5,#21ABA5);
+    -webkit-background-clip: text;
+    color:transparent;
+    &--compass{
+    background-image: linear-gradient(to right, #BBBBBB,#AAAAAA);
+    }
+    &--map{
+      background-image: linear-gradient(to right, #51ADCF,#0278AE);
+      }
+      &--heart{
+        background-image: linear-gradient(to right, #FF8364,#FF4D4D);
+        }
+  }
+  &:hover{
+    transform: translateY(-1.5rem) scale(1.02);
+  }
+  &__text{
+
+  }
+}

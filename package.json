@@ -1,0 +1,15 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "A template for imaginary travel company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass styles/main.scss styles/style.css -w"
+  },
+  "author": "Riwat",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

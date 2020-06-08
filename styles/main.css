@@ -1238,13 +1238,7 @@ a.discover__btn:hover {
 }
 
 .header__logo-box h2 {
-  background: url(./../img/water_texture.jfif);
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
-  -webkit-filter: contrast(1.5);
-          filter: contrast(1.5);
+  color: #424242;
   position: absolute;
 }
 

@@ -8,7 +8,9 @@ body{
   text-transform: uppercase;
   backface-visibility: hidden;
   text-align: center;
-
+  @include response(phone){
+    line-height: 1;
+  }
   &--main{
     letter-spacing: 1.1rem;  
     font-size: 6.5rem;
@@ -34,6 +36,7 @@ body{
       font-size: 2rem;
     }
     @include response(phone){
+      margin-top: .5rem;
       font-size: 1.5rem;
     }
   }

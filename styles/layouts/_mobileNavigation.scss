@@ -17,6 +17,15 @@
         right: 6rem;
         z-index: 2000;
         text-align: center;
+
+        @include response(tab-port){
+            top: 4rem;
+            right:4rem;
+        }
+        @include response(phone){
+            top: 3rem;
+            right:3rem;
+        }
     }
     &__bg{
         height:5rem;
@@ -27,9 +36,17 @@
         right: 6.5rem;
         background-image: radial-gradient($orange-theme,$yellow-theme);
         z-index: 1000;
-
         transform: scale(1);
         transition: transform .75s cubic-bezier(.65,.01,.3,.99);
+
+        @include response(tab-port){
+            top: 4.5rem;
+            right:4.5rem;
+        }
+        @include response(phone){
+            top: 3.5rem;
+            right:3.5rem;
+        }
     }
     &__nav{
         height: 100vh;

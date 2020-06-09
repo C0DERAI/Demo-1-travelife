@@ -3,6 +3,7 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 40rem;
+
   &__side{
     background-color: orangered;
     color: #424242;
@@ -40,9 +41,9 @@
   &:hover &__side--front{
     transform: rotateY(180deg);
     .card__heading{
-      right: 0rem;
-      transform: scale(.9);
-    }
+        right: 0rem;
+        transform: scale(.9);
+      }
     }
     &:hover &__side--back{
       transform: rotateY(0);
@@ -121,5 +122,58 @@
   &__price-value{
     font-size: 6rem;
     font-weight: 100;
+  }
+
+  // Media query
+  @include response(tab-port){
+    height: auto;
+    border-radius: 3px;
+    background-color: $white-theme;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+    &__side{
+      height: auto;
+      transition: all 800ms ease;
+      position: relative;
+      border-radius: 3px;
+      box-shadow:none;
+      &--back{
+        transform: rotateY(0deg);
+        clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+      }
+    }
+    &:hover &__side--front{
+      transform: rotateY(0deg);
+      .card__heading{
+        right: 2rem;
+        transform: scale(1);
+      }
+    }
+    &__details{
+      padding: 1rem 3rem;
+    }
+    //Front side styling
+    &__cta{
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 7rem 5rem 5rem 5rem;
+      text-align: center;
+      position: relative;
+      transform: translate(0);
+    }
+    &__price-box{
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    &__price-only{
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &__price-value{
+      font-size: 6rem;
+      font-weight: 100;
+    }
+
   }
 }

@@ -1,6 +1,5 @@
 .story{
     width:75%;
-    height:300px;
     margin:0 auto;
     box-shadow: 0 3rem 6rem rgba(0,0,0, .1);
     background-color: rgba($white-theme, .6);
@@ -10,7 +9,15 @@
     font-size: $default-font-size;
     text-align: left;
     transform: skewX(-12deg);
+    @include response(phone){
+        transform:skewX(0deg);
 
+    }
+    @include response(tab-port){
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
     & > *{
         transform: skewX(12deg);   
     }
@@ -22,9 +29,15 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path:circle(50% at 50% 50%);
-        transform: translateX(-3rem) skew(12deg);
+        transform: translateX(-3rem) skewX(12deg);
         position: relative;
         overflow: hidden;
+
+        @include response(phone){
+            transform: translateX(-3rem) skewX(0deg);
+
+        }
+
     }
     &__img{
         height: 100%;
@@ -36,6 +49,10 @@
 
     &__text{
         transform: skewX(12deg);   
+        @include response(phone){
+            transform: skewX(0deg);
+
+        }
     }
     &__caption{
         position: absolute;

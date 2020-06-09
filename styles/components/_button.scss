@@ -16,11 +16,19 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  
+  @include response(tab-port){
+    font-size: 1.5rem;
+  }
+  @include response(tab-port){
+    font-size: 1.2rem;
+  }
 }
 }
 .btn-white{
   background-color: $white-theme; 
   color: #424242;
+
   // margin-top:15px;
 }
 
@@ -125,14 +133,16 @@ $button-color: #fafafa;
   border-radius: 4em;
   height:$height;
   width:$width;
-  padding: 0;
   outline: none;
   overflow: hidden;
   color: $button-color;
   transition: all 0.3s 0.1s ease-out;
   text-align: center;
   line-height: 250%;
-
+  
+  @include response(tab-port){
+    margin-bottom: 2rem;
+  }
   &::before{
     @include center;
     content:'';

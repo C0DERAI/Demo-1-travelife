@@ -8,9 +8,14 @@
    url(../img/sunset.jpeg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0);
   clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0);
+  
+  @include response(phone){
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 85vh, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 85vh, 100% 0);
+  }
 }
-
 // logo main
 .header__logo-box{
   // font-family: 'Monoton', cursive;

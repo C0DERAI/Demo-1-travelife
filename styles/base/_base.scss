@@ -9,7 +9,7 @@ html{
   font-size: 90%;
   scroll-behavior: smooth;
   @include response(phone){
-    font-size: 40%; 
+    font-size: 41%; 
   }
   @include response(tab-port){
     font-size: 60%; 

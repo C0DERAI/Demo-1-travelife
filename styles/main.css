@@ -1880,14 +1880,14 @@ a.discover__btn:hover {
 
 .footer {
   background-color: #2a3a4b;
-  padding: 10rem 0;
+  padding: 8rem 0;
   font-size: 1.4rem;
   color: #fafafa;
 }
 
 @media (max-width: 56.25em) {
   .footer {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
 }
 
@@ -1903,7 +1903,7 @@ a.discover__btn:hover {
 }
 
 .footer__logo {
-  width: 15rem;
+  width: 20rem;
   height: auto;
 }
 
@@ -2227,13 +2227,13 @@ main {
 
 .section-tours {
   background-color: #fcfcfc;
-  padding: 20rem 0 10rem 0;
+  padding: 10rem 5rem;
   margin-top: 5rem;
 }
 
 @media (max-width: 56.25em) {
   .section-tours {
-    padding: 5rem 0 5rem 0;
+    padding: 5rem 1rem;
   }
 }
 

@@ -59,6 +59,18 @@
             color:orangered;
             box-shadow: 0 1rem 2rem rgba(0,0,0, .4);
             transform: rotate(5deg) scale(1.3);
+            @include response(phone){
+                box-shadow: none;
+                transform: rotate(0deg) scale(1);
+              }
+            @include response(tab-port){
+                box-shadow: none;
+                transform: rotate(0deg) scale(1); 
+              }
+            @include response(tab-land){
+                box-shadow: none;
+                transform: rotate(0deg) scale(1);
+              }
         }
     }
 

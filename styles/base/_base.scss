@@ -17,6 +17,9 @@ html{
   @include response(tab-land){
     font-size: 66.25%; 
   }
+  @include response(laptop){
+    font-size: 70%;
+  }
   @include response(desktop){
     font-size: 90%; 
   }

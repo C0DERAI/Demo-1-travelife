@@ -10,6 +10,7 @@
     visibility: hidden;
     transition: all 300ms;
     // display: none;
+    
    
     &__content { 
         @include absolutecenter;
@@ -22,27 +23,74 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
         transition: all .35s .2s;
+        @include response(phone){
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            overflow: hidden;
+        }
+        @include response(tab-port){
+            margin: 0 auto;
+            transform: translate(-50%, -50%) scale(0);
+
+            width: 90%;
+        }
     }
     &__left {
         width: 33.333333%;
         height:100%;
         display: table-cell;
+        @include response(phone){
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -100;
+        }
     }
     &__right {
         width: 66.666666%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include response(phone){
+            background-color: rgba($white-theme,.8);
+            width: 100%;
+            height: auto;
+            padding: 1rem 1.1rem;
+        }
+        @include response(tab-port){
+            padding: 1.5rem 2.5rem;
+        }
     }
     &__img {
         display: block;
         width: 100%;
         height: 50%;
+        overflow: hidden;
+       
+        &:nth-child(1){
+            border-radius: 3px 0 0 0;
+            @include response(phone){
+                display: none;
+            }
+        }
+        &:nth-child(2){
+            border-radius: 0 0 0 3px;
+            @include response(phone){
+               filter: blur(5px);
+            }
+        }
+
+        @include response(laptop){
+            width: 100%;
+            height: 10%;
+        }
     }
     &__text {
         font-size: 1.4rem;
         margin-bottom: 4rem;
-
         column-count: 3;
         column-gap: 4rem;
         column-rule: 1px solid rgb(175, 175, 175);
@@ -50,6 +98,18 @@
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         -webkit-hyphens:auto;
+        @include response(phone){
+            font-size: .5rem;
+        }
+        @include response(laptop){
+            font-size: 1rem;
+        }
+        @include response(tab-port){
+            font-size: 1.1rem;
+        }
+        @include response(tab-land){
+            column-count: 1;
+        }
     }
     &:target {
         opacity: 1;
@@ -60,6 +120,7 @@
         transform: translate(-50%, -50%) scale(1);
     }
     &__close {
+        z-index: 5000;
         &:link,
         &:visited {
             color: #424242;

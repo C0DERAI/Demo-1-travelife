@@ -14,6 +14,9 @@
     max-width: 50rem;
     padding: 0 3rem;
   }
+  @include response(phone){
+    padding: 0 1rem;
+  }
   // Clearfix
   @include clearfix;
   

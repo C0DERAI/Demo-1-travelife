@@ -740,7 +740,7 @@ a.discover__btn:hover {
 }
 
 .book__popup .book__btn {
-  margin-top: 400px;
+  margin-top: 200px;
   padding: 1rem 4rem;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 4, 0, 0.9)), to(rgba(231, 105, 21, 0.9)));
@@ -1288,9 +1288,9 @@ a.discover__btn:hover {
 
 @media (max-width: 56.25em) {
   .story {
-    width: 100%;
-    padding: 4rem;
-    padding-left: 7rem;
+    width: 95%;
+    padding: 3rem;
+    padding-left: 4.5rem;
   }
 }
 
@@ -1321,6 +1321,8 @@ a.discover__btn:hover {
 
 @media (max-width: 37.5em) {
   .story__shape {
+    float: none;
+    margin-bottom: 1rem;
     -webkit-transform: translateX(-3rem) skewX(0deg);
             transform: translateX(-3rem) skewX(0deg);
   }
@@ -1416,6 +1418,7 @@ a.discover__btn:hover {
   .book__popup__content {
     margin: 0 auto;
     width: 100%;
+    height: 55rem;
     display: -ms-grid;
     display: grid;
     overflow: hidden;
@@ -1460,7 +1463,7 @@ a.discover__btn:hover {
     background-color: rgba(252, 252, 252, 0.8);
     width: 100%;
     height: auto;
-    padding: 1rem 1.1rem;
+    padding: .5rem .5rem;
   }
 }
 
@@ -1522,6 +1525,8 @@ a.discover__btn:hover {
 
 @media (max-width: 37.5em) {
   .book__popup__text {
+    height: 22rem;
+    margin-bottom: 3rem;
     font-size: .5rem;
   }
 }
@@ -1825,6 +1830,12 @@ a.discover__btn:hover {
   .row {
     max-width: 50rem;
     padding: 0 3rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .row {
+    padding: 0 1rem;
   }
 }
 
@@ -2284,6 +2295,12 @@ main {
 .book__form {
   width: 51%;
   padding: 6rem;
+}
+
+@media (max-width: 37.5em) {
+  .book__form {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 75em) {

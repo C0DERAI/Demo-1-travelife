@@ -90,7 +90,10 @@ main{
   &__form{
     width: 51%;
     padding: 6rem;
+    @include response(phone){
+      padding: 2rem;
 
+    }
     @include response(tab-land){
       width: 70%;
     }
